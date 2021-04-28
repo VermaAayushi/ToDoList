@@ -1,0 +1,151 @@
+body {
+  background-color: #1f1f1f;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+#list_section {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  color: #dcd0ff;
+  margin: 0px auto;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+h3{
+  font-family: 'Great Vibes', cursive;
+  font-size: 29px;
+  color: #dcd0ff;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  color: #dcd0ff;
+  font-size: 20px;
+  list-style-type: none;
+  width: 20%;
+  margin: 0px auto;
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  background-color: #dcd0ff;
+  color: #666;
+  padding: 10px;
+  display: inline-block;
+  margin: 20px auto 20px auto;
+  width: 80%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.item {
+  cursor: context-menu;
+  text-transform: uppercase;
+}
+
+.pop_out{
+  width: 20%;
+  text-decoration: none;
+  background-color: #dcd0ff;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  text-emphasis: bold;
+  text-transform: uppercase;
+}
+
+input[type='text'] {
+  width: 20%;
+  font-size: 16px;
+  padding: 6px;
+  border: none;
+  border-bottom: 5px solid #666;
+  border-radius: 3px;
+}
+
+input[type='submit'] {
+  width: 20%;
+  background-color: #dcd0ff;
+  font-size: 16px;
+  text-emphasis: bold;
+  text-transform: uppercase;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 15px;
+}
+
+#newItemButton {
+  display: none;
+  cursor: context-menu;
+}
+
+#itemField {
+  margin-top: 60px;
+  width: 30%;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 10px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+@media screen and (max-width: 800px) {
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 20px;
+    overflow: scroll;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+  }
+  .item{
+    width: 70%;
+  }
+  #itemField{
+    width: 70%;
+  }
+  input[type='submit']{
+    width: 70%;
+  }
+  .pop_out{
+    width: 70%;
+  }
+}
